@@ -272,7 +272,7 @@ def get_variants(requests, make, model, fuel, cc):
 @api_view(['POST'])
 def get_summary(requests):
     pdf_file = requests.FILES["file"]
-    os.environ["OPENAI_API_KEY"] = "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"
+    os.environ["OPENAI_API_KEY"] = ""
 
     with open("temp.pdf", 'wb') as file:
         file.write(pdf_file.read())
